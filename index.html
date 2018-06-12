@@ -19,7 +19,7 @@
     <script>
         function c1(arg,name){
             console.log(arg + 'passed to GTM');
-            window.dataLayerGH.push({'event':'arg','name':name})
+            window.dataLayerGH.push({'event':arg,'name':name})
         }
         var c2 = c1.bind('c2 button','b2')
         var c3 = c1.bind('c3 button','b3')
