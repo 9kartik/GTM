@@ -11,19 +11,15 @@
     <div>
         GTM Container
     </div>
-    <button onClick="c1('b1')">Button 1</button>
-    <button onClick="c2()">Button 2</button>
-    <button onClick="c3()">Button 3</button>
-    <button onClick="c4()">Button 4</button>
-    <button onClick="c5()">Button 5</button>
+    <button onClick="c1('c1 button','b1')">Button 1</button>
+    <button onClick="c1('c2 button','b2')">Button 2</button>
+    <button onClick="c1('c3 button','b3')">Button 3</button>
+    <button onClick="c1('c4 button','b4')">Button 4</button>
+    <button onClick="c1('c5 button','b5')">Button 5</button>
     <script>
         function c1(arg,name){
             console.log(arg + 'passed to GTM');
             window.dataLayerGH.push({'event':arg,'name':name})
         }
-        var c2 = c1.bind(null,'c2 button','b2')
-        var c3 = c1.bind(null,'c3 button','b3')
-        var c4 = c1.bind(null,'c4 button','b4')
-        var c5 = c1.bind(null,'c5 button','b5')
     </script>
 </html>
